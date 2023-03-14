@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        <title>Filter</title>
+    </head>
+
+
+    <body>
+        <form action="/management" method="post">
+            <button type="submit">Go back</button>
+        </form>
+        <div>
+            {{range .}}
+            <div>
+
+                <br>
+                <h3>Name: {{.Name}}</h3>
+                <p>ID: {{.ID}}</p>
+                <p>Price: {{.Price}}</p>
+                <p>Rating: {{.Aver}}</p>
+
+    
+                
+                
+            </div>
+            {{end}}
+        </div>
+        
+
+
+    </body>
+    
+</html>

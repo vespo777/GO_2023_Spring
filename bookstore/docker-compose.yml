@@ -1,0 +1,29 @@
+# version: "3.9"
+# services:
+#   postgres:
+#     image: postgres:15.2-alpine
+#     environment:
+#       - POSTGRES_USER=vgcudlrb
+#       - POSTGRES_PASSWORD=4piKqE43gj_hwq3m30TIXv0kPVejsdZl
+#       - POSTGRES_DB=vgcudlrb
+
+#       - POSTGRES_USER=${DB_USER}
+#       - POSTGRES_PASSWORD=${DB_PASSWORD}
+#       - POSTGRES_DB=${DB_NAME}
+#       - DATABASE_HOST=${DB_HOST}
+#       - DATABASE_PORT=${DB_PORT}
+#     ports:
+#       - 5432:5432
+#   api:
+#     build: 
+#       context: .
+#       dockerfile: Dockerfile
+#       # context: ../
+#       # dockerfile: Dockerfile
+#     ports:
+#       - "8080:8080"
+#     depends_on: 
+#       - postgres
+#     entrypoint: ["/app/wait-for.sh", "postgres:5432", "--"]
+#     command: ["/app/main"]
+
